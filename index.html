@@ -1,74 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">  
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>4 Triad</title>
-</head>
-<body>
-    <div class="corpo" onclick="voltapost()">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+     <link rel="icon" href="favicon.ico">
+     <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+      <div class="img-wrapper"><img class="img-responsive img-fundo" src="img/bg.svg" alt=""></div>
+      <nav class="navbar navbar-fixed-top navbar-inverse">
+          <div class="col-md-4 logo-wrapper"></div>
 
-    <img src="img/bg.jpg" class="banner" alt="">
-    <header class="col-xs-6 cabecalho">
-        <div class="botaomenu" onclick="mudadisplay()">
-            <img src="img/menu.png" alt="">
-            </div>
-        <div class="img-logo">
-           <img src="img/4logo.png" alt="">
-        
-        </div>
-
-        <h1>Alex Souza - Web Designer</h1>
-        <p>Alex Souza dos Santos</p>
-       
-        
-
-    </header>
-    <nav class="menu" id="estado" onload="initial()"><ul><li>
-    <p class="fechamento" onclick="fechamenu()">X</p>
-    <a href="">Home</a></li>
-    <li><a href="">Portfólio</a></li>
-    <li><a href="">Conhecimentos</a></li></ul></nav>
+          <h1>Alex Souza dos Santos - Web Designer</h1>
+          <p>Portfólio online</p>
+      </nav>
+<div class="row line">
+<div class="col-md-6 conteudo1">
+    <div class="imagem-wrapper"><img class="img-responsive" src="img/eu.svg" alt=""></div>
+    <div class="conteudo-text"><h2>Resumo</h2>
+        <p>Foco em desenvolvimento web/front-end.
+            Também atuo com design gráfico, utilizando ferramentas
+            como Photoshop, Illustrator e CorelDRAW.
+            Busco sempre aprimorar meus conhecimentos, me esforçando
+            e estudando constantemente para obter o melhor resultado na entrega
+            do produto. 
+        </p>
+        <h3>Algumas qualidades</h3>
+        <p>Facilidade de Aprendizagem, facilidade em Trabalhar em Grupos, Dinamismo, Responsabilidade, Comprometimento, Prestativo, Perspectivas de Crescimento Pessoal e Profissional, e outros.</p></div>
+    
 </div>
-    <div class="home-content container" onclick="clickpost()">
-    <h1>Web and front-end developer</h1>
-    <p>Desenvolvimento web com o uso de marcadores HTML5 e CSS3.
-        Desenvolvo web-sites para os mais diversos fins, com foco em sites comerciais
-        de divulgação de pequenos e médios negócios.
-    </p>
-    <h3>Principais conhecimentos</h3>
-    <div class="img-wrapper col-md-11">
-        <img src="img/arte.png" alt="">
-    </div>
+
+<div class="col-md-6 conteudo2">
+
+    <div class="row albuns">
+        <div class="col-md-6">
+          <img class="img-responsive" onmouseover="mostraHTML()" src="img/banner.png" alt="">
+          <span class="linguagem html" onmouseout="tiraHTML()"><p>Linguagens de marcação(HTML5, CSS3) e linguagem javascript.
+              Conto ainda com uma revisão de conteúdo, corrigindo assim, alguns eventuais erros na escrita
+          </p></span>
+        </div>
+        <div class="col-md-6">
+            <img onmouseover="mostrajquery()" class="img-responsive" src="img/jquery.png" alt="">
+            <span class="linguagem jquery" onmouseout="tirajquery()"><p>Framework JQuery, facilidando e agilizando a criação de aplicações web
+                usando pouco código. 
+            </p></span>
+          </div>
+          <div class="col-md-6">
+            <img onmouseover="mostraphp()" class="img-responsive" src="img/php.png" alt="">
+            <span class="linguagem php" onmouseout="tiraphp()"><p>A linguagem PHP  é mundialmente conhecida e uma das mais utilizadas pela facilidade em aprendê-la, manuseá-la, além de ser compatível com quase todos os sistemas operacionais que existem – o que torna seu custo menor.
+          </p></span>
+          </div>
+          <div class="col-md-6">
+            <img onmouseover="mostraangular()" class="img-responsive" src="img/angular.png" alt="">
+            <span class="linguagem angular" onmouseout="tiraangular()"><p>Angular é uma plataforma e framework para construção da interface de aplicações usando HTML, CSS e, principalmente, JavaScript, criada pelos desenvolvedores da Google.
+
+                Ele possui alguns elementos básicos que tornam essa construção interessante.</p></span>
+          </div>
+          <div class="col-md-6">
+            <img onmouseover="mostragit()" class="img-responsive" src="img/capa-git.png" alt="">
+            <span class="linguagem git" onmouseout="tiragit()"><p>Conto ainda com versionamento e controle de códigos através da ferramenta GIT e do sistema online GitHub, para melhor controle dos códigos dos projetos</p></span>
+          </div>
+          <div class="col-md-6">
+            <img onmouseover="mostraboot()" class="img-responsive"  src="img/bootstrap.png" alt="">
+            <span class="linguagem boot" onmouseout="tiraboot()"><p>Na maioria dos projetos, eu utilizo Bootstrap, um framework poderoso para estilizar páginas, e deixar tudo mais responsivo, adaptando-as assim para diversos dispositivos, sejam eles: desktops, mobiles ou tablets</p></span>
+          </div>
+          
+</div>
 
 
 
+</div>
+   
 
+      </div>
+     
+ 
+    
+
+      
+
+         
     
 
 
+      
+      
+    
 
-
-</div>
-
-
-
-
-
-
-
-
-
-
-<script src="js/script.js"></script>    
-</body>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
